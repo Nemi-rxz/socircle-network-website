@@ -6,6 +6,15 @@ An initial responsive website for Socircle Network. It uses the supplied label l
 
 Requires Node.js. From this directory, run `npm start` and open `http://localhost:3000`.
 
+## Deploy to Vercel
+
+This site is configured for Vercel deployment:
+
+1. Push this repository to GitHub
+2. Import the project in Vercel (https://vercel.com/new)
+3. Vercel will automatically detect the static configuration and deploy
+4. The `vercel.json` file handles SPA routing to ensure client-side navigation works correctly
+
 ## Current scope
 
 - Public pages: home, artists and artist profiles, music and release detail pages, videos, news, about, contact, privacy and terms.
