@@ -9,4 +9,4 @@ http.createServer((req,res)=>{
  const full = path.join(root,file);
  if (!full.startsWith(root)) {res.writeHead(403); return res.end('Forbidden');}
  fs.readFile(full,(err,data)=>{ if(err){fs.readFile(path.join(root,'index.html'),(e,d)=>{res.writeHead(e?404:200,{'Content-Type':'text/html; charset=utf-8'});res.end(e?'Not found':d)});return;} res.writeHead(200,{'Content-Type':types[path.extname(full)]||'application/octet-stream'});res.end(data); });
-}).listen(process.env.PORT||3001,()=>console.log('Socircle site ready on port '+(process.env.PORT||3001)));
+}).listen(process.env.PORT||3002,()=>console.log('Socircle site ready on port '+(process.env.PORT||3002)));
