@@ -1,4 +1,7 @@
 .git
 .gitignore
 README.md
+PROJECT_BIBLE.md
 server.js
+.env
+.env.example
